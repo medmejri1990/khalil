@@ -10,7 +10,7 @@ function connect_bd() {
 		$connexion = new PDO($dsn,USER,PASSWD);
 	}
 	catch(PDOException $e) {
-		print_r("echec". $e->getMessage());
+		print_r("echec ". $e->getMessage());
 		exit();
 	}
 	return $connexion;
